@@ -1,26 +1,198 @@
 @import "tailwindcss";
 
+/* ---------------------------------------------------------------------------
+   Olivewood design tokens.
+   Light is the default. Dark is opt-in via [data-theme="dark"] on <html>, set
+   before paint by the inline script in layout.tsx so there is no flash.
+   Every pair below was checked for >=4.5:1 body contrast / >=3:1 large text.
+--------------------------------------------------------------------------- */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --ow-canvas: 46 38% 97%;      /* warm paper            */
+  --ow-surface: 0 0% 100%;      /* cards                 */
+  --ow-surface-2: 46 30% 94%;   /* subtle fills          */
+  --ow-ink: 155 18% 12%;        /* body text             */
+  --ow-ink-soft: 155 10% 36%;   /* secondary text        */
+  --ow-line: 150 12% 86%;       /* hairlines             */
+  --ow-olive: 110 22% 30%;      /* brand                 */
+  --ow-olive-deep: 112 26% 20%;
+  --ow-olive-soft: 108 26% 92%;
+  --ow-clay: 18 48% 52%;        /* accent / CTA          */
+  --ow-clay-soft: 20 60% 95%;
+  --ow-gold: 38 62% 48%;
+  --ow-crisis: 356 68% 44%;
+  --ow-crisis-soft: 356 70% 96%;
+  --ow-focus: 200 90% 40%;
+  --ow-shadow: 155 25% 12%;
+  color-scheme: light;
+}
+
+[data-theme="dark"] {
+  --ow-canvas: 158 18% 8%;
+  --ow-surface: 158 15% 12%;
+  --ow-surface-2: 158 14% 16%;
+  --ow-ink: 46 30% 95%;
+  --ow-ink-soft: 150 8% 72%;
+  --ow-line: 155 10% 24%;
+  --ow-olive: 108 34% 68%;
+  --ow-olive-deep: 108 30% 78%;
+  --ow-olive-soft: 155 16% 18%;
+  --ow-clay: 20 72% 68%;
+  --ow-clay-soft: 18 24% 18%;
+  --ow-gold: 40 70% 62%;
+  --ow-crisis: 356 82% 72%;
+  --ow-crisis-soft: 356 30% 16%;
+  --ow-focus: 198 90% 62%;
+  --ow-shadow: 0 0% 0%;
+  color-scheme: dark;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-canvas: hsl(var(--ow-canvas));
+  --color-surface: hsl(var(--ow-surface));
+  --color-surface-2: hsl(var(--ow-surface-2));
+  --color-ink: hsl(var(--ow-ink));
+  --color-ink-soft: hsl(var(--ow-ink-soft));
+  --color-line: hsl(var(--ow-line));
+  --color-olive: hsl(var(--ow-olive));
+  --color-olive-deep: hsl(var(--ow-olive-deep));
+  --color-olive-soft: hsl(var(--ow-olive-soft));
+  --color-clay: hsl(var(--ow-clay));
+  --color-clay-soft: hsl(var(--ow-clay-soft));
+  --color-gold: hsl(var(--ow-gold));
+  --color-crisis: hsl(var(--ow-crisis));
+  --color-crisis-soft: hsl(var(--ow-crisis-soft));
+  --color-focus: hsl(var(--ow-focus));
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-fraunces), ui-serif, Georgia, serif;
+
+  --radius-card: 1rem;
+  --radius-pill: 999px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  * { border-color: hsl(var(--ow-line)); }
+
+  html {
+    scroll-behavior: smooth;
+    /* Keep anchored headings clear of the sticky header on every breakpoint. */
+    scroll-padding-top: 6.5rem;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: hsl(var(--ow-canvas));
+    color: hsl(var(--ow-ink));
+    font-family: var(--font-sans);
+    /* Prevents the horizontal jiggle decorative blurs can cause on phones. */
+    overflow-x: hidden;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    text-wrap: balance;
+  }
+
+  p { text-wrap: pretty; }
+
+  /* One visible focus treatment everywhere, including for mouse users who
+     tab away mid-interaction. */
+  :focus-visible {
+    outline: 3px solid hsl(var(--ow-focus));
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+
+  /* iOS zooms the page when a font-size < 16px input is focused. */
+  input, select, textarea, button { font: inherit; }
+  input, select, textarea { font-size: max(16px, 1rem); }
+
+  ::selection {
+    background: hsl(var(--ow-olive) / 0.25);
+    color: hsl(var(--ow-ink));
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer components {
+  .ow-shell {
+    width: 100%;
+    margin-inline: auto;
+    max-width: 78rem;
+    padding-inline: 1rem; /* the 16px phone gutter */
+  }
+  @media (min-width: 640px)  { .ow-shell { padding-inline: 1.5rem; } }
+  @media (min-width: 1024px) { .ow-shell { padding-inline: 2.5rem; } }
+
+  .ow-card {
+    background: hsl(var(--ow-surface));
+    border: 1px solid hsl(var(--ow-line));
+    border-radius: var(--radius-card);
+    box-shadow: 0 1px 2px hsl(var(--ow-shadow) / 0.05),
+                0 8px 24px -16px hsl(var(--ow-shadow) / 0.25);
+  }
+
+  .ow-eyebrow {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: hsl(var(--ow-olive));
+  }
+
+  /* Every interactive target clears 44x44 CSS px for touch. */
+  .ow-tap { min-height: 44px; min-width: 44px; }
+
+  .ow-prose { max-width: 68ch; }
+  .ow-prose p + p { margin-top: 1.1em; }
+
+  /* Scroll reveal. The hidden state applies only once the boot script has set
+     `js` on <html>, so a no-JavaScript visitor sees everything immediately. */
+  .ow-reveal {
+    transition:
+      opacity 700ms ease-out,
+      transform 700ms ease-out;
+  }
+  :root.js .ow-reveal {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+  :root.js .ow-reveal.is-shown {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@layer utilities {
+  .ow-grain {
+    background-image: radial-gradient(
+      hsl(var(--ow-olive) / 0.06) 1px, transparent 1px);
+    background-size: 22px 22px;
+  }
+}
+
+/* Honour the OS setting: kill transforms/fades, keep opacity-only feedback. */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+
+  /* Never leave a revealed block hidden when motion is off. */
+  :root.js .ow-reveal,
+  :root.js .ow-reveal.is-shown {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media print {
+  .no-print { display: none !important; }
+  body { background: #fff; color: #000; }
 }
