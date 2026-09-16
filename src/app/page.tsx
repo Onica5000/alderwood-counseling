@@ -9,6 +9,7 @@ import { testimonials } from "@/lib/data/testimonials";
 import { groups } from "@/lib/data/programs";
 import { sortedPosts, formatDate } from "@/lib/data/news";
 import { site } from "@/lib/data/site";
+import { asset } from "@/lib/asset";
 
 const entryPoints = [
   {
@@ -415,7 +416,7 @@ function HeroArt() {
     <div className="ow-card relative overflow-hidden p-0">
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
-        src="/rooms/hero.jpg"
+        src={asset("/rooms/hero.jpg")}
         alt="A counseling room at Olivewood: two armchairs angled toward each other beside a window, with afternoon light across a wood floor and an olive tree outside"
         width={1248}
         height={832}
@@ -428,10 +429,10 @@ function HeroArt() {
 
 function FacilityArt() {
   const shots = [
-    { label: "Playroom", src: "/rooms/playroom.jpg", tall: true },
-    { label: "Quiet room", src: "/rooms/quiet-room.jpg", tall: false },
-    { label: "Waiting area", src: "/rooms/waiting.jpg", tall: false },
-    { label: "Group room", src: "/rooms/group-room.jpg", tall: true },
+    { label: "Playroom", src: asset("/rooms/playroom.jpg"), tall: true },
+    { label: "Quiet room", src: asset("/rooms/quiet-room.jpg"), tall: false },
+    { label: "Waiting area", src: asset("/rooms/waiting.jpg"), tall: false },
+    { label: "Group room", src: asset("/rooms/group-room.jpg"), tall: true },
   ];
   return (
     <div className="grid grid-cols-2 gap-3 sm:gap-4">

@@ -42,6 +42,11 @@ jobs:
           NEXT_PUBLIC_SITE_URL: ${{ steps.pages.outputs.base_url }}
         run: npm run build
 
+      - name: Verify asset paths carry the base path
+        env:
+          NEXT_PUBLIC_BASE_PATH: ${{ steps.pages.outputs.base_path }}
+        run: node scripts/check-asset-paths.mjs
+
       - name: Disable Jekyll processing
         # Without this, GitHub Pages strips Next's /_next/ directory.
         run: touch out/.nojekyll

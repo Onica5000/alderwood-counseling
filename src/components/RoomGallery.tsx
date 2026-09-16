@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { Icon } from "./Icon";
 import { rooms, type Room } from "@/lib/data/rooms";
+import { asset } from "@/lib/asset";
 
 /**
  * Facility gallery with a keyboard-navigable lightbox.
@@ -158,7 +159,7 @@ function RoomArt({ room }: { room: Room }) {
     return (
       // eslint-disable-next-line @next/next/no-img-element
       <img
-        src={room.image}
+        src={asset(room.image)}
         alt={`${room.name} at Olivewood Counseling`}
         className="h-full w-full object-cover"
         loading="lazy"

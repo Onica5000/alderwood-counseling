@@ -3,6 +3,7 @@ import { Icon } from "@/components/Icon";
 import { RoomGallery } from "@/components/RoomGallery";
 import { Breadcrumb, ButtonLink, Callout, PageHeader, Section } from "@/components/ui";
 import { site, fullAddress } from "@/lib/data/site";
+import { asset } from "@/lib/asset";
 
 export const metadata: Metadata = {
   title: "The Facility",
@@ -58,7 +59,7 @@ export default function FacilityPage() {
         <figure className="ow-card mt-10 overflow-hidden p-0">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/rooms/exterior.jpg"
+            src={asset("/rooms/exterior.jpg")}
             alt="The exterior of Olivewood Counseling: a converted house with a covered front porch, set back from a quiet residential street among mature trees"
             className="aspect-[16/9] w-full object-cover"
           />

@@ -3,6 +3,7 @@ import { ContactForm } from "@/components/ContactForm";
 import { Icon } from "@/components/Icon";
 import { Breadcrumb, ButtonLink, Callout, PageHeader, Section } from "@/components/ui";
 import { site, fullAddress } from "@/lib/data/site";
+import { asset } from "@/lib/asset";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -43,7 +44,7 @@ export default function ContactPage() {
             <div className="ow-card overflow-hidden">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/rooms/exterior.jpg"
+                src={asset("/rooms/exterior.jpg")}
                 alt="The exterior of Olivewood Counseling: a converted house with a covered front porch on a quiet residential street"
                 className="aspect-[16/9] w-full object-cover"
                 loading="lazy"
