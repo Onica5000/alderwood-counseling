@@ -104,7 +104,7 @@ export function SafetyBar() {
               <div>
                 <h2 className="font-display text-lg text-ink">If you need help right now</h2>
                 <p className="mt-1 max-w-prose text-sm text-ink-soft">
-                  Olivewood is an outpatient practice and does not provide 24-hour crisis
+                  Alderwood is an outpatient practice and does not provide 24-hour crisis
                   coverage. These lines do, every hour of every day.
                 </p>
               </div>

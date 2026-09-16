@@ -6,7 +6,7 @@ import { Icon } from "@/components/Icon";
 export const metadata: Metadata = {
   title: "Mission",
   description:
-    "Olivewood Counseling believes in people's capacity for positive change. Our mission is to give people the skills to overcome barriers created by past trauma, current circumstances or ongoing behavioral health issues.",
+    "Alderwood Counseling believes in people's capacity for positive change. Our mission is to give people the skills to overcome barriers created by past trauma, current circumstances or ongoing behavioral health issues.",
 };
 
 const principles = [
@@ -48,8 +48,8 @@ export default function MissionPage() {
       <Breadcrumb items={[{ href: "/", label: "Home" }, { label: "Mission" }]} />
       <PageHeader
         eyebrow="About"
-        title="We believe in people's capacity for positive change."
-        lede="Our mission is to help people reach their goals by giving them the skills to overcome barriers created by past trauma, current circumstances or ongoing behavioral health issues."
+        title="We start from the assumption that people can change."
+        lede="Our mission is to give people the practical skills to get past what is standing in their way — whether that is something that happened to them, something happening around them now, or a condition they will be managing for a long time."
       />
 
       <Section>
@@ -80,7 +80,7 @@ export default function MissionPage() {
               than inside them as a permanent feature.
             </p>
             <p>
-              Olivewood is recognised as one of the few practices in the Lehigh Valley equipped
+              Alderwood is recognised as one of the few practices in the Lehigh Valley equipped
               to serve the full age spectrum — preschoolers through seniors — in a welcoming
               clinical environment. In practice this means a family does not have to assemble
               three different practices and three different intake processes to get everyone
@@ -99,7 +99,7 @@ export default function MissionPage() {
               </dl>
             </div>
             <Callout title="A limit worth stating" tone="crisis" icon="alert">
-              Olivewood is an outpatient practice. We do not provide 24-hour crisis coverage,
+              Alderwood is an outpatient practice. We do not provide 24-hour crisis coverage,
               inpatient care, or medication management. We will say so early and refer you well
               rather than hold onto work we cannot do.
             </Callout>
@@ -140,7 +140,7 @@ export default function MissionPage() {
               their future.&rdquo;
             </p>
             <footer className="mt-6 text-sm text-white/80">
-              Sue Dietrich, LCSW — Founding Partner
+              Marian Holloway, LCSW — Founding Partner
             </footer>
           </blockquote>
         </div>

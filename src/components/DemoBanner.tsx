@@ -4,11 +4,10 @@ import { site } from "@/lib/data/site";
 /**
  * The first thing in the document, on every page.
  *
- * This build carries Olivewood's real name, address and phone alongside
- * invented hours, rates, credentials and AI-generated photography. It is
- * noindexed, but a link can still be forwarded, so anyone who lands here has to
- * be told immediately — before they read a fee or an opening time — that this
- * is not the practice's website, and where the real one is.
+ * Alderwood Counseling does not exist. The practice, its staff, address, phone
+ * number and photographs are all invented — but the design is deliberately
+ * convincing, so anyone who lands here has to be told before they read a fee or
+ * an opening time and act on it.
  *
  * Deliberately not dismissible and deliberately not `no-print`: a screenshot or
  * a printout has to carry the notice too.
@@ -27,21 +26,22 @@ export function DemoBanner() {
           <Icon name="alert" className="mt-px h-4 w-4 shrink-0 sm:mt-0" />
           <span>
             <strong className="font-semibold">
-              Demonstration site — this is not Olivewood Counseling&rsquo;s real website.
+              Demonstration site — Alderwood Counseling is not a real practice.
             </strong>{" "}
             <span className="text-[hsl(30_40%_86%)]">
-              It is an unofficial design concept. Staff details, hours, fees, insurance
-              information and all photographs on it are fictional. Do not rely on anything here.
+              This is a web design portfolio piece. The practice, its clinicians, address,
+              phone number, fees and photographs are all invented. Nothing here can be booked
+              and no one here can be called.
             </span>
           </span>
         </p>
 
         <a
-          href="https://www.olivewoodcounseling.com/"
+          href="#about-this-site"
           className="ow-tap inline-flex shrink-0 items-center justify-center gap-2 rounded-pill bg-[hsl(30_60%_96%)] px-4 py-2 text-xs font-semibold text-[hsl(20_85%_22%)] transition-transform hover:scale-[1.02] sm:text-sm"
         >
-          Go to the real Olivewood site
-          <Icon name="external" className="h-3.5 w-3.5" />
+          What this is
+          <Icon name="chevron" className="h-3.5 w-3.5" />
         </a>
       </div>
     </aside>
@@ -52,8 +52,9 @@ export function DemoBanner() {
 export function DemoNotice() {
   return (
     <aside
+      id="about-this-site"
       aria-label="About this demonstration site"
-      className="rounded-card border-2 border-[hsl(20_60%_45%)] bg-[hsl(20_60%_45%)]/10 p-5"
+      className="scroll-mt-28 rounded-card border-2 border-[hsl(20_60%_45%)] bg-[hsl(20_60%_45%)]/10 p-5"
     >
       <h2 className="flex items-center gap-2 font-display text-base text-ink">
         <Icon name="alert" className="h-5 w-5 shrink-0 text-[hsl(20_70%_42%)] dark:text-clay" />
@@ -61,44 +62,31 @@ export function DemoNotice() {
       </h2>
       <div className="mt-2 space-y-2 text-xs leading-relaxed text-ink-soft">
         <p>
-          This is an <strong className="text-ink">unofficial demonstration</strong> — a
-          redesign concept for Olivewood Counseling, built to show what the practice&rsquo;s
-          website could look like. It is not operated by, endorsed by, or affiliated with
-          Olivewood Counseling.
+          <strong className="text-ink">{site.name} is not a real counseling practice.</strong>{" "}
+          This site is a web design demonstration — a portfolio piece showing what a modern
+          practice website could look like, built end to end.
         </p>
         <p>
-          The practice is real. Almost everything else on these pages is not: clinician
-          biographies, degrees and certifications, office hours, session fees, insurance
-          figures, appointment availability, group seat counts and every photograph are all
-          invented or AI-generated. Two of the staff members listed do not exist.
-          <strong className="text-ink"> Nothing here should be relied on.</strong>
+          Everything on it is invented: the practice, its ten clinicians and their
+          biographies, degrees and certifications, the address, the phone and fax numbers,
+          office hours, session fees, insurance figures, appointment availability, group seat
+          counts, the client testimonials, and every photograph. No one listed here exists. The
+          building shown does not exist. Nothing can be booked and no one can be called.
         </p>
         <p>
-          For real information about the practice, including whether they are taking clients
-          and what your insurance covers, go to the practice directly.
+          It is set in the Lehigh Valley because a design has to be grounded somewhere
+          specific to be worth judging. It is not a depiction of any practice operating there.
+        </p>
+        <p className="text-ink-soft/80">
+          The layout and page structure were developed by studying a real practice&rsquo;s
+          website. No identifying detail from it was carried across.
         </p>
       </div>
 
-      <div className="mt-4 flex flex-col gap-2 sm:flex-row">
-        <a
-          href="https://www.olivewoodcounseling.com/"
-          className="ow-tap inline-flex items-center justify-center gap-2 rounded-pill bg-clay px-4 py-2.5 text-xs font-semibold text-white"
-        >
-          olivewoodcounseling.com
-          <Icon name="external" className="h-3.5 w-3.5" />
-        </a>
-        <a
-          href={site.phoneHref}
-          className="ow-tap inline-flex items-center justify-center gap-2 rounded-pill border border-line bg-surface px-4 py-2.5 text-xs font-semibold text-ink"
-        >
-          <Icon name="phone" className="h-3.5 w-3.5 text-olive" />
-          {site.phone}
-        </a>
-      </div>
-
-      <p className="mt-3 text-[0.7rem] leading-relaxed text-ink-soft/80">
-        The crisis numbers on this site (988 and the Lehigh and Northampton county lines) are
-        real and correct. If you are in crisis, use them — regardless of anything else here.
+      <p className="mt-4 rounded-lg border border-crisis/25 bg-crisis-soft p-3 text-[0.7rem] leading-relaxed text-ink-soft">
+        <strong className="text-crisis">One exception, deliberately.</strong> The crisis
+        numbers on this site — 988, and the Lehigh and Northampton county lines — are real,
+        current and correct. If you need them, use them, regardless of everything else above.
       </p>
     </aside>
   );

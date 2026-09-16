@@ -6,7 +6,7 @@ import { site } from "@/lib/data/site";
 export const metadata: Metadata = {
   title: "Accessibility",
   description:
-    "How this site and the Olivewood building are built to be usable — keyboard navigation, contrast, reduced motion, step-free access, and how to report a barrier.",
+    "How this site and the Alderwood building are built to be usable — keyboard navigation, contrast, reduced motion, step-free access, and how to report a barrier.",
 };
 
 const web = [
@@ -19,7 +19,7 @@ const web = [
 ];
 
 const building = [
-  "Step-free entrance from the Delaware Avenue lot",
+  "Step-free entrance from the Alder Court lot",
   "All counseling rooms on the ground floor",
   "Accessible restroom with grab rails",
   "Hearing loop installed in the group room",

@@ -9,29 +9,29 @@ import { therapists } from "@/lib/data/staff";
 export const metadata: Metadata = {
   title: "Founders",
   description:
-    "Olivewood Counseling was established in April 2011 by Sue Dietrich and Becky Richendollar, a mother and daughter committed to serving the children and families of the Lehigh Valley.",
+    "Alderwood Counseling was established in March 2012 by Marian and Kate Holloway, a mother and daughter committed to serving the children and families of the Lehigh Valley.",
 };
 
 const timeline = [
   {
     year: "2011",
     title: "Two chairs and a folding table",
-    body: "Sue and Becky open Olivewood in April with a two-room suite, one shared phone line and a caseload built entirely of referrals from people who already knew them.",
+    body: "Marian and Kate open Alderwood in April with a two-room suite, one shared phone line and a caseload built entirely of referrals from people who already knew them.",
   },
   {
     year: "2013",
     title: "The practice outgrows the suite",
-    body: "Amy Esch and John Weaver join, extending the practice into adolescent, adult and disaster-response work. Evening hours start because the waitlist is made almost entirely of people who work.",
+    body: "Dana Whitfield and Raymond Castellan join, extending the practice into adolescent, adult and disaster-response work. Evening hours start because the waitlist is made almost entirely of people who work.",
   },
   {
     year: "2014",
-    title: "Delaware Avenue",
-    body: "Olivewood moves to 510 Delaware Avenue — a building chosen over several medical-office suites specifically because it has seven rooms that are different from one another. Becky is named Bethlehem's Top Social Worker.",
+    title: "Alder Court",
+    body: "Alderwood moves to 215 Alder Court — a building chosen over several medical-office suites specifically because it has seven rooms that are different from one another. Kate is named Bethlehem's Top Social Worker.",
   },
   {
     year: "2018",
     title: "Groups begin",
-    body: "The DBT skills program launches under Marie Schneller, followed by the educator support group. The practice starts running cohorts rather than only individual hours.",
+    body: "The DBT skills program launches under Ingrid Voss, followed by the educator support group. The practice starts running cohorts rather than only individual hours.",
   },
   {
     year: "2026",
@@ -48,8 +48,8 @@ export default function FoundersPage() {
       <Breadcrumb items={[{ href: "/", label: "Home" }, { label: "Founders" }]} />
       <PageHeader
         eyebrow="About"
-        title="A mother and a daughter, since April 2011"
-        lede="Olivewood Counseling was established by Sue Dietrich and Becky Richendollar — a pair committed to using their education and extensive professional experience to provide excellent services to the children and families of the Lehigh Valley."
+        title="A mother and a daughter, since March 2012"
+        lede="Alderwood Counseling was established by Marian and Kate Holloway — a mother and daughter committed to using their education and extensive professional experience to provide excellent services to the children and families of the Lehigh Valley."
       />
 
       <Section>

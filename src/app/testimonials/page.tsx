@@ -5,7 +5,7 @@ import { Breadcrumb, ButtonLink, Callout, PageHeader, Section } from "@/componen
 export const metadata: Metadata = {
   title: "Testimonials",
   description:
-    "What clients say about counseling at Olivewood — adults, teenagers, children, families, couples and group members, in their own words.",
+    "What clients say about counseling at Alderwood — adults, teenagers, children, families, couples and group members, in their own words.",
 };
 
 export default function TestimonialsPage() {

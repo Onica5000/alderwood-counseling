@@ -103,7 +103,7 @@ export default function ServicesPage() {
       <Section>
         <div className="grid gap-6 md:grid-cols-2">
           <Callout title="What we do not do" tone="crisis" icon="alert">
-            Olivewood is outpatient only. We do not provide inpatient care, partial
+            Alderwood is outpatient only. We do not provide inpatient care, partial
             hospitalization, medication management, custody evaluations or court testimony,
             or 24-hour crisis coverage. We keep a real referral list for all of it and will
             use it rather than hold onto work we cannot do well.

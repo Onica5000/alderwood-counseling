@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 /* ---------------------------------------------------------------------------
-   Olivewood design tokens.
+   Alderwood design tokens.
    Light is the default. Dark is opt-in via [data-theme="dark"] on <html>, set
    before paint by the inline script in layout.tsx so there is no flash.
    Every pair below was checked for >=4.5:1 body contrast / >=3:1 large text.

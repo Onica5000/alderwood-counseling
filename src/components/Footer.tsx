@@ -53,7 +53,7 @@ export function Footer() {
                 Call 911, or call or text <a href="tel:988" className="font-semibold text-crisis underline underline-offset-2">988</a>.
                 Lehigh County <a href="tel:+16107823127" className="font-semibold text-crisis underline underline-offset-2">610-782-3127</a> ·
                 Northampton County <a href="tel:+16102529060" className="font-semibold text-crisis underline underline-offset-2">610-252-9060</a>.
-                Olivewood does not provide 24-hour crisis coverage.
+                Alderwood does not provide 24-hour crisis coverage.
               </p>
             </div>
           </div>
@@ -80,11 +80,10 @@ export function Footer() {
         </div>
 
         <div className="mt-12 flex flex-col gap-4 border-t border-line pt-6 sm:flex-row sm:items-center sm:justify-between">
-          {/* Not "© Olivewood Counseling" — this site is not theirs, and a
-              copyright line in their name would imply they operate it. */}
+          {/* A plausible copyright line is part of what makes an invented
+              practice read as real, so it says what this actually is instead. */}
           <p className="text-xs text-ink-soft">
-            Original site content © {new Date().getFullYear()} {site.name}. This unofficial
-            redesign concept is not affiliated with the practice.
+            © {new Date().getFullYear()} — a fictional practice, for demonstration purposes.
           </p>
           <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-ink-soft">
             {site.hours.slice(0, 3).map((h) => (

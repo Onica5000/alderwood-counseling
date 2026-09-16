@@ -8,7 +8,7 @@ import { site } from "@/lib/data/site";
 export const metadata: Metadata = {
   title: "FAQ",
   description:
-    "Searchable answers about starting counseling at Olivewood — costs, insurance, confidentiality, teen privacy, cancellation, telehealth and crisis care.",
+    "Searchable answers about starting counseling at Alderwood — costs, insurance, confidentiality, teen privacy, cancellation, telehealth and crisis care.",
 };
 
 /** FAQPage structured data, so answers can surface directly in search results. */

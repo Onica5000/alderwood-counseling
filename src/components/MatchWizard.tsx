@@ -249,7 +249,7 @@ export function MatchWizard() {
             This ranks eight clinicians against six answers. Our intake coordinator has the
             actual schedule, knows who has had a cancellation, and can ask the follow-up
             question this form did not think to ask. If the result above looks wrong, it
-            probably is — call (610) 417-0463 and say so.
+            probably is — call (610) 555-0142 and say so.
           </p>
         </div>
       </div>
@@ -388,7 +388,7 @@ export function MatchWizard() {
                   type="radio"
                   checked={answers.format === "in-person"}
                   label="In person"
-                  hint="At 510 Delaware Avenue, Bethlehem"
+                  hint="At 215 Alder Court, Bethlehem"
                   onChange={() => setAnswers((a) => ({ ...a, format: "in-person" }))}
                 />
                 <ChoiceCard

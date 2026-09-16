@@ -160,7 +160,7 @@ function RoomArt({ room }: { room: Room }) {
       // eslint-disable-next-line @next/next/no-img-element
       <img
         src={asset(room.image)}
-        alt={`${room.name} at Olivewood Counseling`}
+        alt={`${room.name} at Alderwood Counseling`}
         className="h-full w-full object-cover"
         loading="lazy"
       />

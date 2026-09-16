@@ -10,7 +10,7 @@ import { site } from "@/lib/data/site";
 export const metadata: Metadata = {
   title: "Groups & Workshops",
   description:
-    "Current Olivewood cohorts with live seat counts — the DBT skills program for adults and adolescents, educator support, caregiver support, grief drop-in and a children's social skills group.",
+    "Current Alderwood cohorts with live seat counts — the DBT skills program for adults and adolescents, educator support, caregiver support, grief drop-in and a children's social skills group.",
 };
 
 const statusMeta = {

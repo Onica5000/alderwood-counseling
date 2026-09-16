@@ -8,7 +8,7 @@ import { asset } from "@/lib/asset";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Call (610) 417-0463 or send a message. Olivewood Counseling is at 510 Delaware Avenue, Bethlehem, PA 18015, with evening and Saturday hours.",
+    "Call (610) 555-0142 or send a message. Alderwood Counseling is at 215 Alder Court, Bethlehem, PA 18018, with evening and Saturday hours.",
 };
 
 export default function ContactPage() {
@@ -45,7 +45,7 @@ export default function ContactPage() {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={asset("/rooms/exterior.jpg")}
-                alt="The exterior of Olivewood Counseling: a converted house with a covered front porch on a quiet residential street"
+                alt="The exterior of Alderwood Counseling: a converted house with a covered front porch on a quiet residential street"
                 className="aspect-[16/9] w-full object-cover"
                 loading="lazy"
               />
@@ -118,7 +118,7 @@ export default function ContactPage() {
                 ))}
               </ul>
               <p className="mt-3 text-xs">
-                Olivewood is an outpatient practice and does not provide 24-hour crisis coverage.
+                Alderwood is an outpatient practice and does not provide 24-hour crisis coverage.
               </p>
             </Callout>
           </aside>
@@ -133,7 +133,7 @@ export default function ContactPage() {
               {
                 icon: "pin" as const,
                 title: "By car",
-                body: "Free lot behind the building, entered from Delaware Avenue. Two accessible spaces nearest the step-free door. Street parking is unmetered after 6pm.",
+                body: "Free lot behind the building, entered from Alder Court. Two accessible spaces nearest the step-free door. Street parking is unmetered after 6pm.",
               },
               {
                 icon: "users" as const,
@@ -164,7 +164,7 @@ export default function ContactPage() {
 /** A stylised locator rather than an embedded map — no third-party tracker on page load. */
 function MapArt() {
   return (
-    <svg viewBox="0 0 400 300" className="h-full w-full" role="img" aria-label="Stylised map showing 510 Delaware Avenue, Bethlehem">
+    <svg viewBox="0 0 400 300" className="h-full w-full" role="img" aria-label="Stylised map showing 215 Alder Court, Bethlehem">
       <rect width="400" height="300" fill="hsl(var(--ow-surface-2))" />
 
       {/* River */}
@@ -188,10 +188,10 @@ function MapArt() {
         <path d="M0 100h400M0 186h400M120 10v186M252 10v186" />
       </g>
 
-      {/* Delaware Avenue, highlighted */}
+      {/* Alder Court, highlighted */}
       <path d="M132 112h110v64H132z" fill="hsl(var(--ow-olive))" opacity="0.18" />
       <text x="140" y="168" fontSize="9" fill="hsl(var(--ow-ink-soft))" fontFamily="var(--font-sans)">
-        Delaware Ave
+        Alder Court
       </text>
 
       {/* Pin */}

@@ -1,4 +1,4 @@
-/** The Olivewood mark: an olive sprig growing out of a rooted trunk. */
+/** The Alderwood mark: an olive sprig growing out of a rooted trunk. */
 export function Logo({ className = "h-9 w-9" }: { className?: string }) {
   return (
     <svg viewBox="0 0 48 48" className={className} aria-hidden="true" focusable="false">
@@ -25,7 +25,7 @@ export function Logo({ className = "h-9 w-9" }: { className?: string }) {
 export function Wordmark({ className = "" }: { className?: string }) {
   return (
     <span className={`font-display leading-none tracking-tight ${className}`}>
-      Olivewood
+      Alderwood
       <span className="block text-[0.58em] font-sans font-semibold uppercase tracking-[0.22em] text-ink-soft">
         Counseling
       </span>

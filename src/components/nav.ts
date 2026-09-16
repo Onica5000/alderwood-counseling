@@ -15,7 +15,7 @@ export const nav: NavItem[] = [
     label: "About",
     children: [
       { href: "/about/mission/", label: "Mission", blurb: "What we believe people are capable of." },
-      { href: "/about/founders/", label: "Founders", blurb: "A mother and daughter, since April 2011." },
+      { href: "/about/founders/", label: "Founders", blurb: "A mother and daughter, since March 2012." },
       { href: "/about/staff/", label: "Our Clinicians", blurb: "Eight therapists and the people at the front desk." },
       { href: "/about/facility/", label: "The Facility", blurb: "Seven rooms, deliberately unlike a clinic." },
     ],

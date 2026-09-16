@@ -6,7 +6,7 @@ import { site } from "@/lib/data/site";
 export const metadata: Metadata = {
   title: "Privacy & HIPAA",
   description:
-    "How Olivewood Counseling handles protected health information, the four legal limits on confidentiality, your rights over your record, and what this website does and does not collect.",
+    "How Alderwood Counseling handles protected health information, the four legal limits on confidentiality, your rights over your record, and what this website does and does not collect.",
 };
 
 const exceptions = [

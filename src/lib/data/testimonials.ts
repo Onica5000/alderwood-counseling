@@ -14,7 +14,7 @@ export const testimonials: Testimonial[] = [
   {
     id: "alyssa",
     quote:
-      "I have had experience with a few other local counseling agencies and none compare to my experience at Olivewood. From the moment you walk in it feels like somebody's home rather than a clinic — there is no sliding glass window, nobody says your full name out loud in front of a room. My therapist has a positive attitude that never once tipped over into telling me my problems were small. Counseling here has genuinely changed the shape of my life.",
+      "I have had experience with a few other local counseling agencies and none compare to my experience at Alderwood. From the moment you walk in it feels like somebody's home rather than a clinic — there is no sliding glass window, nobody says your full name out loud in front of a room. My therapist has a positive attitude that never once tipped over into telling me my problems were small. Counseling here has genuinely changed the shape of my life.",
     attribution: "Alyssa, 29",
     context: "Individual counseling, two years",
     tags: ["adult"],
@@ -31,10 +31,10 @@ export const testimonials: Testimonial[] = [
   },
   {
     id: "child-note",
-    quote: "my theripist Dr. Sue would allways be there to cheer me up. She is so spcial to me",
+    quote: "my theripist Dr. Marian would allways be there to cheer me up. She is so spcial to me",
     childNote: true,
     attribution: "Client, age 8",
-    context: "Play therapy · Sue is an LCSW, not a doctor — we left the spelling alone",
+    context: "Play therapy · Marian is an LCSW, not a doctor — we left the spelling alone",
     tags: ["child"],
     featured: true,
   },
@@ -50,7 +50,7 @@ export const testimonials: Testimonial[] = [
   {
     id: "collin",
     quote:
-      "Life has been much more livable with the help of Olivewood. I'm not that depressed and I can handle my problems much easier now.",
+      "Life has been much more livable with the help of Alderwood. I'm not that depressed and I can handle my problems much easier now.",
     attribution: "Collin, 17",
     context: "Adolescent counseling",
     tags: ["teen"],
@@ -67,7 +67,7 @@ export const testimonials: Testimonial[] = [
   {
     id: "dbt-group",
     quote:
-      "The DBT group was the hardest thing I have ever committed to and the only thing that has worked. Twenty-four weeks, diary cards every day, Marie refusing to let anything slide. I have not been in a hospital since I finished.",
+      "The DBT group was the hardest thing I have ever committed to and the only thing that has worked. Twenty-four weeks, diary cards every day, Ingrid refusing to let anything slide. I have not been in a hospital since I finished.",
     attribution: "Group member, 24",
     context: "DBT Skills Program",
     tags: ["group", "adult"],
@@ -107,7 +107,7 @@ export const testimonials: Testimonial[] = [
   {
     id: "front-desk",
     quote:
-      "Leslie called my insurance for me. I had been putting off making the appointment for four months because I could not face that phone call. That is the whole reason I am in therapy.",
+      "Trish called my insurance for me. I had been putting off making the appointment for four months because I could not face that phone call. That is the whole reason I am in therapy.",
     attribution: "Adult client",
     context: "Intake & insurance",
     tags: ["adult"],

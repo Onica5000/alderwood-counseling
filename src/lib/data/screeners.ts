@@ -43,7 +43,7 @@ export const screeners: Screener[] = [
       { min: 0, max: 4, label: "Minimal", tone: "ok", advice: "Your answers do not suggest significant depressive symptoms right now. If something still feels off, that is worth a conversation regardless — a screener measures a narrow thing." },
       { min: 5, max: 9, label: "Mild", tone: "mild", advice: "Your answers suggest mild depressive symptoms. This is the range where counseling tends to work quickly, and where people most often talk themselves out of calling. A short course of CBT is a reasonable next step." },
       { min: 10, max: 14, label: "Moderate", tone: "moderate", advice: "Your answers suggest moderate depressive symptoms. This is squarely in the range where treatment is indicated and effective. We would recommend scheduling an appointment, and mentioning this score when you call." },
-      { min: 15, max: 19, label: "Moderately severe", tone: "high", advice: "Your answers suggest moderately severe depressive symptoms. Please do not sit on this. Call us at (610) 417-0463 — tell the person who answers that you scored in this range and we will prioritize scheduling you." },
+      { min: 15, max: 19, label: "Moderately severe", tone: "high", advice: "Your answers suggest moderately severe depressive symptoms. Please do not sit on this. Call us at (610) 555-0142 — tell the person who answers that you scored in this range and we will prioritize scheduling you." },
       { min: 20, max: 27, label: "Severe", tone: "high", advice: "Your answers suggest severe depressive symptoms. Please contact us today, or speak with your physician. If you are in danger right now, call or text 988, or call 911." },
     ],
   },
@@ -69,7 +69,7 @@ export const screeners: Screener[] = [
       { min: 0, max: 4, label: "Minimal", tone: "ok", advice: "Your answers do not suggest a significant anxiety problem at the moment. Worth rechecking if things change." },
       { min: 5, max: 9, label: "Mild", tone: "mild", advice: "Your answers suggest mild anxiety. CBT is the best-evidenced treatment for anxiety at this level and often works in ten to twelve sessions." },
       { min: 10, max: 14, label: "Moderate", tone: "moderate", advice: "Your answers suggest moderate anxiety — the range where it usually starts costing you things: sleep, opportunities, patience. Treatment is well worth it here." },
-      { min: 15, max: 21, label: "Severe", tone: "high", advice: "Your answers suggest severe anxiety. Please call us at (610) 417-0463. Anxiety at this level responds to treatment, and it very rarely resolves by waiting." },
+      { min: 15, max: 21, label: "Severe", tone: "high", advice: "Your answers suggest severe anxiety. Please call us at (610) 555-0142. Anxiety at this level responds to treatment, and it very rarely resolves by waiting." },
     ],
   },
 ];

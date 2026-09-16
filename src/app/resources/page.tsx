@@ -5,7 +5,7 @@ import { Breadcrumb, Callout, PageHeader, Section } from "@/components/ui";
 export const metadata: Metadata = {
   title: "Resource Library",
   description:
-    "Worksheets, guides and crisis cards from Olivewood's clinicians — safety planning, thought records, DBT skills, school refusal, talking to children about death, and insurance questions worth asking.",
+    "Worksheets, guides and crisis cards from Alderwood's clinicians — safety planning, thought records, DBT skills, school refusal, talking to children about death, and insurance questions worth asking.",
 };
 
 export default function ResourcesPage() {

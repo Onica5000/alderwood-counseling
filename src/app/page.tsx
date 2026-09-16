@@ -68,17 +68,17 @@ export default function HomePage() {
 
             <Reveal delay={60}>
               <h1 className="mt-6 text-4xl leading-[1.05] sm:text-5xl lg:text-[3.75rem]">
-                Accomplished clinicians.
+                Serious clinicians.
                 <br />
-                <span className="text-olive">Inviting space.</span>
+                <span className="text-olive">An unclinical space.</span>
                 <br />
-                Genuine respect.
+                Respect that isn&rsquo;t optional.
               </h1>
             </Reveal>
 
             <Reveal delay={120}>
               <p className="ow-prose mt-6 text-base leading-relaxed text-ink-soft sm:text-lg">
-                Olivewood is one of the few practices in the Lehigh Valley equipped to treat
+                Alderwood is one of the few practices in the Lehigh Valley equipped to treat
                 the full age range — from a two-year-old in the playroom to an eighty-year-old
                 in the quiet room — in a building chosen specifically for how little it
                 resembles a clinic.
@@ -189,7 +189,7 @@ export default function HomePage() {
               </h2>
               <div className="ow-prose mt-5 space-y-4 text-ink-soft">
                 <p>
-                  We looked at a lot of buildings before choosing 510 Delaware Avenue. Most of
+                  We looked at a lot of buildings before choosing 215 Alder Court. Most of
                   the options were medical-office suites, and every one of them had the same
                   three things: a sliding glass window, a row of identical chairs facing a
                   television, and lighting that makes everybody look unwell.
@@ -417,7 +417,7 @@ function HeroArt() {
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         src={asset("/rooms/hero.jpg")}
-        alt="A counseling room at Olivewood: two armchairs angled toward each other beside a window, with afternoon light across a wood floor and an olive tree outside"
+        alt="A counseling room at Alderwood: two armchairs angled toward each other beside a window, with afternoon light across a wood floor and a tree outside"
         width={1248}
         height={832}
         className="h-full w-full object-cover"
@@ -444,7 +444,7 @@ function FacilityArt() {
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={s.src}
-            alt={`${s.label} at Olivewood Counseling`}
+            alt={`${s.label} at Alderwood Counseling`}
             className="h-full w-full object-cover"
             loading="lazy"
           />

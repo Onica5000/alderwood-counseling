@@ -5,7 +5,7 @@ import { Breadcrumb, Callout, PageHeader, Section } from "@/components/ui";
 export const metadata: Metadata = {
   title: "Find a Therapist",
   description:
-    "Six questions, then a ranked shortlist of Olivewood clinicians — with the reasoning for and against each match shown rather than hidden.",
+    "Six questions, then a ranked shortlist of Alderwood clinicians — with the reasoning for and against each match shown rather than hidden.",
 };
 
 export default function FindTherapistPage() {

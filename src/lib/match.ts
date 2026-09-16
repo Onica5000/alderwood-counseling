@@ -96,7 +96,7 @@ export function matchTherapists(a: MatchAnswers): MatchResult[] {
     if (a.format) {
       if (t.formats.includes(a.format)) {
         score += WEIGHTS.format;
-        reasons.push(a.format === "telehealth" ? "Offers secure video sessions." : "Sees clients in the Delaware Avenue office.");
+        reasons.push(a.format === "telehealth" ? "Offers secure video sessions." : "Sees clients in the Alder Court office.");
       } else {
         caveats.push(a.format === "telehealth" ? "Does not offer telehealth." : "In-person availability is limited.");
       }

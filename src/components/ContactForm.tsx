@@ -42,7 +42,7 @@ export function ContactForm() {
         <h2 className="mt-5 text-2xl">Thank you — we have your message</h2>
         <p className="ow-prose mx-auto mt-3 text-sm leading-relaxed text-ink-soft">
           Someone will get back to you within one business day. If you need help before then,
-          call us at (610) 417-0463 during office hours, or call or text 988 at any hour.
+          call us at (610) 555-0142 during office hours, or call or text 988 at any hour.
         </p>
         <button
           type="button"

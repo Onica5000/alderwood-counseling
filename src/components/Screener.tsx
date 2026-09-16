@@ -167,7 +167,7 @@ export function ScreenerTool() {
               ))}
             </ul>
             <p className="mt-4 text-sm leading-relaxed text-ink-soft">
-              When you call Olivewood, say that this is part of what is going on. It changes how
+              When you call Alderwood, say that this is part of what is going on. It changes how
               quickly we schedule you and which clinician you are matched with — and your first
               session will include building a safety plan you actually leave with.
             </p>

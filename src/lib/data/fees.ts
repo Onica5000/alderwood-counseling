@@ -2,7 +2,7 @@ export interface SessionType {
   key: string;
   label: string;
   minutes: number;
-  /** Olivewood's self-pay rate, and the rate insurers are billed. */
+  /** Alderwood's self-pay rate, and the rate insurers are billed. */
   rate: number;
   cptCode: string;
   note?: string;

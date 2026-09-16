@@ -143,7 +143,7 @@ export const services: Service[] = [
     body: [
       "Later life produces a specific set of losses — of a role, a body, a spouse, a driver's license — and a culture that treats the resulting depression as simply what old age is. It is not, and it responds to treatment.",
       "We work with older adults on adjustment to chronic illness, isolation after a loss, anxiety about finances and care, and the grief that accumulates when your generation begins to go.",
-      "Olivewood is one of the few Lehigh Valley practices equipped to treat the full age span, which matters more than it sounds: we can see an older adult and their adult child and their grandchild without three different intake processes.",
+      "Alderwood is one of the few Lehigh Valley practices equipped to treat the full age span, which matters more than it sounds: we can see an older adult and their adult child and their grandchild without three different intake processes.",
       "Where mobility is the barrier, we offer telehealth with a phone-only fallback and, in a limited radius, in-home sessions.",
     ],
     ageBands: ["seniors"],
@@ -286,7 +286,7 @@ export const services: Service[] = [
     name: "Telehealth",
     category: "specialty",
     summary:
-      "Any Olivewood service by secure video, switchable week to week, with a phone-only fallback when bandwidth or comfort is the barrier.",
+      "Any Alderwood service by secure video, switchable week to week, with a phone-only fallback when bandwidth or comfort is the barrier.",
     body: [
       "Telehealth is not a lesser version of the work. For a good number of our clients it is the reason the work happens at all — a parent who cannot arrange childcare, a client without a car, a teenager who talks more freely from their own room.",
       "Every clinician on our roster offers video sessions on the same platform, and you can switch between in-person and video week to week without renegotiating anything. Where video is the barrier rather than the solution, we will do a phone session.",

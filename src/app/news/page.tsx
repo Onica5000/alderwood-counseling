@@ -9,7 +9,7 @@ import { formatDate, sortedPosts } from "@/lib/data/news";
 export const metadata: Metadata = {
   title: "News",
   description:
-    "Practice updates from Olivewood Counseling — new groups, telehealth, DBT cohorts, recognition and the move to Delaware Avenue.",
+    "Practice updates from Alderwood Counseling — new groups, telehealth, DBT cohorts, recognition and the move to Alder Court.",
 };
 
 export default function NewsPage() {

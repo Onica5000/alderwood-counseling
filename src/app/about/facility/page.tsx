@@ -8,11 +8,11 @@ import { asset } from "@/lib/asset";
 export const metadata: Metadata = {
   title: "The Facility",
   description:
-    "Olivewood's facility provides a welcoming environment for all ages — seven rooms at 510 Delaware Avenue, Bethlehem, deliberately different from one another.",
+    "Alderwood's facility provides a welcoming environment for all ages — seven rooms at 215 Alder Court, Bethlehem, deliberately different from one another.",
 };
 
 const accessibility = [
-  { icon: "check" as const, label: "Step-free entrance from the Delaware Avenue lot" },
+  { icon: "check" as const, label: "Step-free entrance from the Alder Court lot" },
   { icon: "check" as const, label: "All counseling rooms on the ground floor" },
   { icon: "check" as const, label: "Accessible restroom with grab rails" },
   { icon: "check" as const, label: "Hearing loop in the group room" },
@@ -28,7 +28,7 @@ export default function FacilityPage() {
       <Breadcrumb items={[{ href: "/", label: "Home" }, { label: "The Facility" }]} />
       <PageHeader
         eyebrow="About"
-        title="Olivewood's facility provides a welcoming environment for all ages"
+        title="Alderwood's facility provides a welcoming environment for all ages"
         lede="We have a variety of rooms to accommodate the needs of our clients — whether we are working with young children, adults or a whole family at once. If a particular room would help, tell us when you schedule."
       >
         <ButtonLink
@@ -60,11 +60,11 @@ export default function FacilityPage() {
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={asset("/rooms/exterior.jpg")}
-            alt="The exterior of Olivewood Counseling: a converted house with a covered front porch, set back from a quiet residential street among mature trees"
+            alt="The exterior of Alderwood Counseling: a converted house with a covered front porch, set back from a quiet residential street among mature trees"
             className="aspect-[16/9] w-full object-cover"
           />
           <figcaption className="border-t border-line px-5 py-3 text-sm text-ink-soft">
-            510 Delaware Avenue — a house rather than a medical suite, which was the whole point.
+            215 Alder Court — a house rather than a medical suite, which was the whole point.
           </figcaption>
         </figure>
 
@@ -114,7 +114,7 @@ export default function FacilityPage() {
             <h2 className="text-2xl sm:text-3xl">Getting here</h2>
             <div className="ow-prose mt-4 space-y-4 text-ink-soft">
               <p>
-                510 Delaware Avenue sits on Bethlehem&rsquo;s south side, a few minutes from the
+                215 Alder Court sits on Bethlehem&rsquo;s south side, a few minutes from the
                 Hill-to-Hill Bridge and within walking distance of the Lehigh University campus.
                 Parking is free in the lot behind the building; the entrance from the lot is
                 step-free.
@@ -146,7 +146,7 @@ export default function FacilityPage() {
                   Parking
                 </dt>
                 <dd className="mt-3 space-y-1.5 text-sm text-ink-soft">
-                  <p>Free lot behind the building, entered from Delaware Avenue.</p>
+                  <p>Free lot behind the building, entered from Alder Court.</p>
                   <p>Two accessible spaces nearest the step-free door.</p>
                   <p>Street parking is unmetered after 6pm.</p>
                 </dd>

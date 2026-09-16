@@ -56,14 +56,14 @@ export const metadata: Metadata = {
     siteName: site.name,
     title: `[DEMO] ${site.name} — unofficial redesign concept`,
     description:
-      "Demonstration site — not Olivewood Counseling's real website. An unofficial design concept with fictional staff details, hours, fees and photographs. The real practice is at olivewoodcounseling.com.",
+      "Demonstration site — not Alderwood Counseling's real website. An unofficial design concept with fictional staff details, hours, fees and photographs. The real practice is at alderwoodcounseling.com.",
     locale: "en_US",
     images: [
       {
         url: ogImage,
         width: 1248,
         height: 832,
-        alt: "A counseling room at Olivewood: two armchairs by a window, with an olive tree outside",
+        alt: "A counseling room at Alderwood: two armchairs by a window, with a tree outside",
       },
     ],
   },

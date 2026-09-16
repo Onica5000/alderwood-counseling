@@ -31,7 +31,7 @@ export const faqs: FaqItem[] = [
     category: "getting-started",
     question: "How do I schedule a first appointment?",
     answer: [
-      "Call (610) 417-0463 or use the request form on our contact page. Either way you will speak with a person, not a queue.",
+      "Call (610) 555-0142 or use the request form on our contact page. Either way you will speak with a person, not a queue.",
       "We will ask what is bringing you in, who the client is, what has already been tried, your insurance, and what days and times could actually work. That conversation is how we match you to a clinician rather than to whoever has the next open slot.",
       "Most people are seen within seven to ten days. If you need to be seen sooner, say so when you call — we hold a small number of slots for exactly that.",
     ],
@@ -55,7 +55,7 @@ export const faqs: FaqItem[] = [
     answer: [
       "Insurance coverage varies greatly. With most in-network plans you pay only a copay, typically $20–$60 per session; if you have a deductible that has not been met, you pay the contracted rate until it is.",
       "Our self-pay rates are $160 for a 50-minute individual session, $210 for an 80-minute couples session, and $90 per session for the DBT skills group.",
-      "Olivewood is committed to accessibility. We hold a limited number of sliding-scale slots and we will set up a payment plan rather than lose a client over money. Ask — we would far rather have that conversation than have you not call.",
+      "Alderwood is committed to accessibility. We hold a limited number of sliding-scale slots and we will set up a payment plan rather than lose a client over money. Ask — we would far rather have that conversation than have you not call.",
     ],
     keywords: ["cost", "price", "fee", "rate", "expensive", "afford", "sliding scale", "copay"],
   },
@@ -148,14 +148,14 @@ export const faqs: FaqItem[] = [
     answer: [
       "Call 911 or go to the emergency room if there is immediate danger. Call or text 988 for the Suicide & Crisis Lifeline, any hour.",
       "County crisis services: Lehigh County 610-782-3127, Northampton County 610-252-9060. Both operate 24 hours and can send a mobile crisis team.",
-      "Olivewood is an outpatient practice. We do not provide 24-hour crisis coverage, and our voicemail is not monitored overnight. If you are an active client, your clinician will have given you a specific after-hours plan.",
+      "Alderwood is an outpatient practice. We do not provide 24-hour crisis coverage, and our voicemail is not monitored overnight. If you are an active client, your clinician will have given you a specific after-hours plan.",
     ],
     keywords: ["crisis", "emergency", "988", "suicidal", "help now", "hotline", "urgent"],
   },
   {
     id: "safety-plan",
     category: "crisis",
-    question: "I am having thoughts of suicide. Can I still come to Olivewood?",
+    question: "I am having thoughts of suicide. Can I still come to Alderwood?",
     answer: [
       "Yes. Thoughts of suicide are common, treatable, and not a reason to be turned away — several of our clinicians specialize in exactly this, and our DBT program was built for it.",
       "Tell us when you call. It changes how fast we schedule you and which clinician you are matched with, and it means your first session will include building a safety plan you actually leave with.",

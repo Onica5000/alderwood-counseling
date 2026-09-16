@@ -122,7 +122,7 @@ export function FaqSearch() {
         <div className="ow-card mt-4 p-10 text-center">
           <p className="font-display text-xl">Nothing matches &ldquo;{query}&rdquo;</p>
           <p className="ow-prose mx-auto mt-2 text-sm text-ink-soft">
-            Which may mean we have not written that answer yet. Call (610) 417-0463 and ask —
+            Which may mean we have not written that answer yet. Call (610) 555-0142 and ask —
             and if it is a good question, it will end up on this page.
           </p>
           <button

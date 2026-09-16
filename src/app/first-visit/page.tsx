@@ -7,7 +7,7 @@ import { site } from "@/lib/data/site";
 export const metadata: Metadata = {
   title: "Your First Visit",
   description:
-    "A minute-by-minute walkthrough of the first appointment at Olivewood — the paperwork, the questions you will be asked, the ones you may decline, and what happens after.",
+    "A minute-by-minute walkthrough of the first appointment at Alderwood — the paperwork, the questions you will be asked, the ones you may decline, and what happens after.",
 };
 
 const timeline = [

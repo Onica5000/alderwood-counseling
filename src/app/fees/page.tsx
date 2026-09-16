@@ -7,7 +7,7 @@ import { plans, sessionTypes } from "@/lib/data/fees";
 export const metadata: Metadata = {
   title: "Fees & Insurance",
   description:
-    "Olivewood's published rates, the plans we accept, and an interactive estimator that shows what you would pay per session and over a first year.",
+    "Alderwood's published rates, the plans we accept, and an interactive estimator that shows what you would pay per session and over a first year.",
 };
 
 const accessibilityNotes = [
@@ -57,7 +57,7 @@ export default function FeesPage() {
 
           <div className="mt-8 overflow-x-auto">
             <table className="w-full min-w-[34rem] border-collapse text-sm">
-              <caption className="sr-only">Olivewood Counseling session rates</caption>
+              <caption className="sr-only">Alderwood Counseling session rates</caption>
               <thead>
                 <tr className="border-b border-line text-left">
                   <th scope="col" className="py-3 pr-4 font-semibold text-ink">Session</th>
