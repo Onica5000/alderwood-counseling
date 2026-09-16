@@ -1,0 +1,7 @@
+# Redesign concept published for review — not the live Olivewood Counseling site.
+# It carries the practice's real name, address and phone alongside invented hours,
+# rates and imagery, so it must not be discoverable by someone searching for the
+# real practice. Every page also carries a noindex meta tag, which is what takes
+# effect when this is served under a path rather than at a domain root.
+User-agent: *
+Disallow: /

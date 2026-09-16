@@ -6,7 +6,6 @@ export const metadata: Metadata = {
   title: "Self-Check",
   description:
     "Two-minute depression (PHQ-9) and anxiety (GAD-7) screeners that run entirely in your browser. Educational, not diagnostic.",
-  robots: { index: true, follow: true },
 };
 
 export default function SelfCheckPage() {

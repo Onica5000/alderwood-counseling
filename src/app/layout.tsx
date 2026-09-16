@@ -21,7 +21,12 @@ const fraunces = Fraunces({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.olivewoodcounseling.com"),
+  // Absolute URLs for Open Graph images resolve against this. It must be where
+  // the build is actually served, not the real practice domain — the live site
+  // does not host our assets. The workflow sets it from the Pages URL.
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
+  ),
   title: {
     default: `${site.name} — ${site.tagline}`,
     template: `%s · ${site.name}`,
@@ -50,7 +55,9 @@ export const metadata: Metadata = {
     ],
   },
   twitter: { card: "summary_large_image", images: ["/rooms/hero.jpg"] },
-  robots: { index: true, follow: true },
+  // Concept build: keep it out of search results so it cannot be mistaken for
+  // the live practice site. See src/app/robots.ts.
+  robots: { index: false, follow: false, nocache: true },
 };
 
 export const viewport: Viewport = {
