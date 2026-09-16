@@ -11,8 +11,13 @@ built as a demonstration for the Olivewood team.
 > on it should be quoted to anyone.
 >
 > **The photographs are AI-generated and are not Olivewood's rooms or building.**
-> They are placeholders showing the intended feel. Replace them before this is ever
-> shown to the public. See [Fictional content](#fictional-content).
+> They are placeholders showing the intended feel. See [Fictional content](#fictional-content).
+>
+> The deployed site says all of this on itself: a non-dismissible banner at the top of
+> every page, a fuller notice in every footer, `[Demo]` in every page title, and
+> `noindex` throughout. `DemoBanner.tsx` holds both notices — delete the
+> `<DemoBanner />` line in `layout.tsx` for an internal screenshot, but do not commit
+> that.
 
 ---
 
@@ -35,6 +40,7 @@ counseling practice website is actually asked for.
 | Dark mode | — | Yes, no flash |
 | Photography | 9 interior shots | 8 generated placeholders, optimized to 592 KB total |
 | Accessibility | Not addressed | WCAG 2.2 AA target, documented on `/accessibility` |
+| Demo disclosure | n/a | Banner on all 48 pages, footer notice, `[Demo]` titles, `noindex` |
 
 ### Pages
 

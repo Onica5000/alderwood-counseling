@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Icon } from "./Icon";
 import { Logo, Wordmark } from "./Logo";
 import { footerColumns } from "./nav";
+import { DemoNotice } from "./DemoBanner";
 import { site, fullAddress } from "@/lib/data/site";
 
 export function Footer() {
@@ -79,8 +80,11 @@ export function Footer() {
         </div>
 
         <div className="mt-12 flex flex-col gap-4 border-t border-line pt-6 sm:flex-row sm:items-center sm:justify-between">
+          {/* Not "© Olivewood Counseling" — this site is not theirs, and a
+              copyright line in their name would imply they operate it. */}
           <p className="text-xs text-ink-soft">
-            © {new Date().getFullYear()} {site.name}. Founded {site.founded}.
+            Original site content © {new Date().getFullYear()} {site.name}. This unofficial
+            redesign concept is not affiliated with the practice.
           </p>
           <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-ink-soft">
             {site.hours.slice(0, 3).map((h) => (
@@ -89,6 +93,10 @@ export function Footer() {
               </span>
             ))}
           </div>
+        </div>
+
+        <div className="mt-8">
+          <DemoNotice />
         </div>
 
         <p className="mt-4 max-w-4xl text-xs leading-relaxed text-ink-soft/80">

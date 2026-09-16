@@ -4,6 +4,7 @@ import "./globals.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { SafetyBar } from "@/components/SafetyBar";
+import { DemoBanner } from "@/components/DemoBanner";
 import { themeBootScript } from "@/components/ThemeToggle";
 import { site, fullAddress } from "@/lib/data/site";
 
@@ -36,9 +37,11 @@ const ogImage = `${siteUrl}/rooms/hero.jpg`;
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
+  // "[Demo]" rides along in the browser tab and in every search or share
+  // preview, so the notice is not only visible once the page has rendered.
   title: {
-    default: `${site.name} — ${site.tagline}`,
-    template: `%s · ${site.name}`,
+    default: `[Demo] ${site.name} — unofficial redesign concept`,
+    template: `%s · [Demo] ${site.name}`,
   },
   description: site.description,
   keywords: [
@@ -51,8 +54,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     siteName: site.name,
-    title: `${site.name} — ${site.tagline}`,
-    description: site.description,
+    title: `[DEMO] ${site.name} — unofficial redesign concept`,
+    description:
+      "Demonstration site — not Olivewood Counseling's real website. An unofficial design concept with fictional staff details, hours, fees and photographs. The real practice is at olivewoodcounseling.com.",
     locale: "en_US",
     images: [
       {
@@ -134,6 +138,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         >
           Skip to main content
         </a>
+        {/* First in the document: anyone who lands here is told this is not the
+            practice's site before they can read a fee or an opening time. */}
+        <DemoBanner />
         <SafetyBar />
         <Header />
         <main id="main" tabIndex={-1}>

@@ -19,6 +19,7 @@ built to show the Olivewood team what their site could be. **Not the live site.*
 | **No `setState` inside `useEffect`** — the React Compiler lint rule is on and errors | Use `useSyncExternalStore`, adjust-during-render, or CSS state (see `Reveal`, `ThemeToggle`, `FaqSearch`) |
 | **Never add analytics, tracking, embedded maps or third-party scripts** | The privacy page states there are none; that claim must stay true |
 | **Interactive tools stay client-side only** | The matcher, estimator and screeners promise nothing leaves the browser |
+| **Never remove `<DemoBanner />` from `layout.tsx`** without being asked | It is the only thing telling a stranger this is not the practice's real site. Removing it for an internal screenshot is fine; committing that removal is not |
 | **Keep the crisis affordances** — safety bar, quick exit, PHQ-9 item-9 interstitial | Safety features, not decoration |
 | **Portrait marks stay generated** (`Avatar.tsx`) unless real headshots are supplied | Never show a face that is not the person named beside it |
 | **Room photos are AI-generated placeholders**, not Olivewood's rooms — keep that disclosed in the README | They are convincing enough to be mistaken for the real building |
