@@ -8,7 +8,11 @@ built as a demonstration for the Olivewood team.
 > else — extended biographies, credentials, rates, insurance figures, seat counts,
 > appointment slots, several staff members and several news posts — is **invented** to
 > fill out the design. Nothing here has been verified with the practice and no number
-> on it should be quoted to anyone. See [Fictional content](#fictional-content).
+> on it should be quoted to anyone.
+>
+> **The photographs are AI-generated and are not Olivewood's rooms or building.**
+> They are placeholders showing the intended feel. Replace them before this is ever
+> shown to the public. See [Fictional content](#fictional-content).
 
 ---
 
@@ -29,6 +33,7 @@ counseling practice website is actually asked for.
 | Self-assessment | — | PHQ-9 and GAD-7, scored in-browser |
 | Search | — | Staff, FAQ and resource library all filterable |
 | Dark mode | — | Yes, no flash |
+| Photography | 9 interior shots | 8 generated placeholders, optimized to 592 KB total |
 | Accessibility | Not addressed | WCAG 2.2 AA target, documented on `/accessibility` |
 
 ### Pages
@@ -130,6 +135,15 @@ statuses and appointment slots · Daniel Okafor and Priya Raman · all rates, CP
 and insurance figures · group schedules and seat counts · resource library contents ·
 three of the six news posts · room descriptions and access notes · quotations
 attributed to staff.
+
+**The images too.** Every photograph in `public/rooms/` was generated with xAI's
+`grok-imagine-image`. They depict no real place — not the interior, and not the
+building at 510 Delaware Avenue. They are there to show the intended tone, and they
+are the first thing that should be swapped for real photography.
+
+To replace them: drop a file into `public/rooms/` and point the matching record in
+`src/lib/data/rooms.ts` at it via its `image` field. Removing the field falls the
+gallery back to the generated SVG interiors, which are still in `RoomGallery.tsx`.
 
 Crisis numbers (988, 610-782-3127, 610-252-9060) are real and correct.
 

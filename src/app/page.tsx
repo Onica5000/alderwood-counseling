@@ -404,109 +404,53 @@ export default function HomePage() {
 /* ------------------------------------------------------------------- Art */
 
 /**
- * The hero illustration.
+ * The hero image: a room, not people.
  *
- * Drawn rather than photographed: a stock photo of strangers in a therapy room
- * is the single most generic move a counseling site can make, and any photo we
- * used would show people who are not the people here.
+ * A stock photo of strangers mid-session is the most generic move a counseling
+ * site can make, and any such photo would show people who are not the people
+ * here. The space itself is the claim this page is making anyway.
  */
 function HeroArt() {
   return (
     <div className="ow-card relative overflow-hidden p-0">
-      <svg viewBox="0 0 400 340" className="w-full" role="img" aria-label="Illustration of a warm counseling room with two chairs, a window and an olive tree outside">
-        <defs>
-          <linearGradient id="hero-wall" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stopColor="hsl(var(--ow-surface-2))" />
-            <stop offset="100%" stopColor="hsl(var(--ow-surface))" />
-          </linearGradient>
-          <linearGradient id="hero-sky" x1="0" y1="0" x2="0.4" y2="1">
-            <stop offset="0%" stopColor="hsl(var(--ow-olive) / 0.18)" />
-            <stop offset="100%" stopColor="hsl(var(--ow-gold) / 0.22)" />
-          </linearGradient>
-          <linearGradient id="hero-light" x1="0" y1="0" x2="0.6" y2="1">
-            <stop offset="0%" stopColor="hsl(var(--ow-gold) / 0.3)" />
-            <stop offset="100%" stopColor="hsl(var(--ow-gold) / 0)" />
-          </linearGradient>
-        </defs>
-
-        <rect width="400" height="340" fill="url(#hero-wall)" />
-
-        {/* Window and the tree the practice is named for */}
-        <g>
-          <rect x="196" y="38" width="150" height="130" rx="6" fill="url(#hero-sky)" />
-          <circle cx="262" cy="96" r="30" fill="hsl(var(--ow-olive) / 0.5)" />
-          <circle cx="292" cy="82" r="20" fill="hsl(var(--ow-olive) / 0.38)" />
-          <circle cx="238" cy="80" r="17" fill="hsl(var(--ow-olive) / 0.34)" />
-          <path d="M268 168V108" stroke="hsl(var(--ow-olive-deep))" strokeWidth="5" strokeLinecap="round" opacity="0.65" />
-          <rect x="196" y="38" width="150" height="130" rx="6" fill="none" stroke="hsl(var(--ow-line))" strokeWidth="3" />
-          <path d="M271 38v130M196 103h150" stroke="hsl(var(--ow-line))" strokeWidth="3" />
-        </g>
-
-        {/* Afternoon light across the floor */}
-        <path d="M196 168 346 168 300 300 150 300Z" fill="url(#hero-light)" />
-
-        {/* Floor line */}
-        <path d="M0 262h400" stroke="hsl(var(--ow-line))" strokeWidth="2" />
-
-        {/* Two chairs, turned slightly toward one another */}
-        <g fill="hsl(var(--ow-olive))" opacity="0.9">
-          <path d="M40 262v-46a20 20 0 0 1 20-20h22a20 20 0 0 1 20 20v46Z" opacity="0.28" />
-          <path d="M44 262v-42a16 16 0 0 1 16-16h22a16 16 0 0 1 16 16v42Z" />
-          <rect x="46" y="256" width="6" height="26" rx="3" />
-          <rect x="90" y="256" width="6" height="26" rx="3" />
-        </g>
-        <g fill="hsl(var(--ow-clay))" opacity="0.9">
-          <path d="M150 262v-52a22 22 0 0 1 22-22h24a22 22 0 0 1 22 22v52Z" opacity="0.25" />
-          <path d="M155 262v-47a18 18 0 0 1 18-18h23a18 18 0 0 1 18 18v47Z" />
-          <rect x="157" y="256" width="6" height="26" rx="3" />
-          <rect x="207" y="256" width="6" height="26" rx="3" />
-        </g>
-
-        {/* Side table with a plant and a box of tissues */}
-        <g>
-          <rect x="112" y="228" width="32" height="5" rx="2.5" fill="hsl(var(--ow-ink-soft))" opacity="0.5" />
-          <rect x="126" y="233" width="4" height="29" fill="hsl(var(--ow-ink-soft))" opacity="0.4" />
-          <path d="M120 228c0-10 4-16 8-18 1 8-2 15-8 18Z" fill="hsl(var(--ow-olive))" opacity="0.7" />
-          <path d="M132 228c2-8 6-12 10-13-1 7-4 12-10 13Z" fill="hsl(var(--ow-olive))" opacity="0.55" />
-        </g>
-
-        {/* Rug */}
-        <ellipse cx="150" cy="288" rx="118" ry="20" fill="hsl(var(--ow-clay))" opacity="0.12" />
-      </svg>
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src="/rooms/hero.jpg"
+        alt="A counseling room at Olivewood: two armchairs angled toward each other beside a window, with afternoon light across a wood floor and an olive tree outside"
+        width={1248}
+        height={832}
+        className="h-full w-full object-cover"
+        fetchPriority="high"
+      />
     </div>
   );
 }
 
 function FacilityArt() {
-  const rooms = [
-    { label: "Playroom", hue: 38 },
-    { label: "Quiet room", hue: 200 },
-    { label: "Family room", hue: 110 },
-    { label: "Group room", hue: 280 },
+  const shots = [
+    { label: "Playroom", src: "/rooms/playroom.jpg", tall: true },
+    { label: "Quiet room", src: "/rooms/quiet-room.jpg", tall: false },
+    { label: "Waiting area", src: "/rooms/waiting.jpg", tall: false },
+    { label: "Group room", src: "/rooms/group-room.jpg", tall: true },
   ];
   return (
     <div className="grid grid-cols-2 gap-3 sm:gap-4">
-      {rooms.map((r, i) => (
-        <div
-          key={r.label}
-          className={`ow-card relative overflow-hidden ${i % 3 === 0 ? "aspect-[4/5]" : "aspect-square"}`}
+      {shots.map((s) => (
+        <figure
+          key={s.label}
+          className={`ow-card relative overflow-hidden ${s.tall ? "aspect-[4/5]" : "aspect-square"}`}
         >
-          <svg viewBox="0 0 100 100" className="h-full w-full" aria-hidden="true">
-            <defs>
-              <linearGradient id={`room-${r.hue}`} x1="0" y1="0" x2="0.5" y2="1">
-                <stop offset="0%" stopColor={`hsl(${r.hue} 34% 72%)`} />
-                <stop offset="100%" stopColor={`hsl(${r.hue + 14} 30% 46%)`} />
-              </linearGradient>
-            </defs>
-            <rect width="100" height="100" fill={`url(#room-${r.hue})`} />
-            <rect x="10" y="12" width="34" height="30" rx="3" fill="#fff" opacity="0.28" />
-            <path d="M0 74c18-6 30 4 48-2s34-8 52-2v30H0Z" fill="#fff" opacity="0.16" />
-            <circle cx="72" cy="30" r="12" fill="#fff" opacity="0.2" />
-          </svg>
-          <span className="absolute bottom-2 left-2 rounded-pill bg-surface/90 px-2.5 py-1 text-xs font-semibold text-ink backdrop-blur">
-            {r.label}
-          </span>
-        </div>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={s.src}
+            alt={`${s.label} at Olivewood Counseling`}
+            className="h-full w-full object-cover"
+            loading="lazy"
+          />
+          <figcaption className="absolute bottom-2 left-2 rounded-pill bg-surface/90 px-2.5 py-1 text-xs font-semibold text-ink backdrop-blur">
+            {s.label}
+          </figcaption>
+        </figure>
       ))}
     </div>
   );

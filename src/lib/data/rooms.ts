@@ -2,7 +2,7 @@ export interface Room {
   slug: string;
   name: string;
   hue: number;
-  /** Set once a photograph exists in /public/rooms; falls back to generated art. */
+  /** Photograph in /public/rooms. Falls back to generated art when absent. */
   image?: string;
   caption: string;
   bestFor: string[];
@@ -13,6 +13,7 @@ export interface Room {
 export const rooms: Room[] = [
   {
     slug: "playroom",
+    image: "/rooms/playroom.jpg",
     name: "The Playroom",
     hue: 38,
     caption:
@@ -22,6 +23,7 @@ export const rooms: Room[] = [
   },
   {
     slug: "quiet-room",
+    image: "/rooms/quiet-room.jpg",
     name: "The Quiet Room",
     hue: 200,
     caption:
@@ -31,6 +33,7 @@ export const rooms: Room[] = [
   },
   {
     slug: "family-room",
+    image: "/rooms/family-room.jpg",
     name: "The Family Room",
     hue: 110,
     caption:
@@ -40,6 +43,7 @@ export const rooms: Room[] = [
   },
   {
     slug: "group-room",
+    image: "/rooms/group-room.jpg",
     name: "The Group Room",
     hue: 280,
     caption:
@@ -49,6 +53,7 @@ export const rooms: Room[] = [
   },
   {
     slug: "teen-room",
+    image: "/rooms/teen-room.jpg",
     name: "The Teen Room",
     hue: 340,
     caption:
@@ -58,6 +63,7 @@ export const rooms: Room[] = [
   },
   {
     slug: "waiting",
+    image: "/rooms/waiting.jpg",
     name: "The Waiting Area",
     hue: 70,
     caption:

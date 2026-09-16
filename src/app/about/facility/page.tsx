@@ -55,14 +55,24 @@ export default function FacilityPage() {
           </p>
         </div>
 
-        <div className="mt-10">
+        <figure className="ow-card mt-10 overflow-hidden p-0">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/rooms/exterior.jpg"
+            alt="The exterior of Olivewood Counseling: a converted house with a covered front porch, set back from a quiet residential street among mature trees"
+            className="aspect-[16/9] w-full object-cover"
+          />
+          <figcaption className="border-t border-line px-5 py-3 text-sm text-ink-soft">
+            510 Delaware Avenue — a house rather than a medical suite, which was the whole point.
+          </figcaption>
+        </figure>
+
+        <div className="mt-6">
           <RoomGallery />
         </div>
         <p className="mt-4 text-xs text-ink-soft">
-          Rooms are shown as illustrations. Replace the art with photographs by dropping files
-          into <code className="rounded bg-surface-2 px-1.5 py-0.5">/public/rooms/</code> and
-          setting <code className="rounded bg-surface-2 px-1.5 py-0.5">image</code> on each
-          record.
+          Select any room to see it larger, along with what it is used for and its access
+          notes. Use the arrow keys to move between rooms.
         </p>
       </Section>
 

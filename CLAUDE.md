@@ -21,6 +21,8 @@ built to show the Olivewood team what their site could be. **Not the live site.*
 | **Interactive tools stay client-side only** | The matcher, estimator and screeners promise nothing leaves the browser |
 | **Keep the crisis affordances** — safety bar, quick exit, PHQ-9 item-9 interstitial | Safety features, not decoration |
 | **Portrait marks stay generated** (`Avatar.tsx`) unless real headshots are supplied | Never show a face that is not the person named beside it |
+| **Room photos are AI-generated placeholders**, not Olivewood's rooms — keep that disclosed in the README | They are convincing enough to be mistaken for the real building |
+| **Compress any new image**: `magick f.jpg -strip -resize '1400x1400>' -interlace JPEG -quality 80 f.jpg` | Raw generations are ~300 KB each; this cut the set from 2.4 MB to 592 KB |
 
 ## Fictional vs. real
 

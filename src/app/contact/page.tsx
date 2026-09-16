@@ -41,8 +41,15 @@ export default function ContactPage() {
 
           <aside className="space-y-6">
             <div className="ow-card overflow-hidden">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/rooms/exterior.jpg"
+                alt="The exterior of Olivewood Counseling: a converted house with a covered front porch on a quiet residential street"
+                className="aspect-[16/9] w-full object-cover"
+                loading="lazy"
+              />
               <a href={mapsUrl} target="_blank" rel="noopener noreferrer" className="block">
-                <div className="relative aspect-[4/3] bg-surface-2">
+                <div className="relative aspect-[4/3] border-t border-line bg-surface-2">
                   <MapArt />
                   <span className="absolute bottom-3 left-3 flex items-center gap-1.5 rounded-pill bg-surface/90 px-3 py-1.5 text-xs font-semibold text-ink backdrop-blur">
                     <Icon name="external" className="h-3.5 w-3.5" />

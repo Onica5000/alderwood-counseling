@@ -40,8 +40,16 @@ export const metadata: Metadata = {
     title: `${site.name} — ${site.tagline}`,
     description: site.description,
     locale: "en_US",
+    images: [
+      {
+        url: "/rooms/hero.jpg",
+        width: 1248,
+        height: 832,
+        alt: "A counseling room at Olivewood: two armchairs by a window, with an olive tree outside",
+      },
+    ],
   },
-  twitter: { card: "summary_large_image" },
+  twitter: { card: "summary_large_image", images: ["/rooms/hero.jpg"] },
   robots: { index: true, follow: true },
 };
 
