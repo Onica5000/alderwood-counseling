@@ -20,13 +20,22 @@ const fraunces = Fraunces({
   axes: ["SOFT", "WONK"],
 });
 
+/**
+ * Where this build is actually served — not the real practice domain, which
+ * does not host our assets. The workflow sets it from the Pages base URL.
+ *
+ * Open Graph URLs are composed from this by hand rather than left relative:
+ * when the site lives under a path (a GitHub Pages project site), a leading
+ * slash resolves against the origin and drops the path, producing a 404.
+ */
+const siteUrl = (
+  process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"
+).replace(/\/$/, "");
+
+const ogImage = `${siteUrl}/rooms/hero.jpg`;
+
 export const metadata: Metadata = {
-  // Absolute URLs for Open Graph images resolve against this. It must be where
-  // the build is actually served, not the real practice domain — the live site
-  // does not host our assets. The workflow sets it from the Pages URL.
-  metadataBase: new URL(
-    process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
-  ),
+  metadataBase: new URL(siteUrl),
   title: {
     default: `${site.name} — ${site.tagline}`,
     template: `%s · ${site.name}`,
@@ -47,14 +56,14 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "/rooms/hero.jpg",
+        url: ogImage,
         width: 1248,
         height: 832,
         alt: "A counseling room at Olivewood: two armchairs by a window, with an olive tree outside",
       },
     ],
   },
-  twitter: { card: "summary_large_image", images: ["/rooms/hero.jpg"] },
+  twitter: { card: "summary_large_image", images: [ogImage] },
   // Concept build: keep it out of search results so it cannot be mistaken for
   // the live practice site. See src/app/robots.ts.
   robots: { index: false, follow: false, nocache: true },

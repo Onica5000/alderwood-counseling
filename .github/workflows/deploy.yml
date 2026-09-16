@@ -39,7 +39,7 @@ jobs:
           NEXT_PUBLIC_BASE_PATH: ${{ steps.pages.outputs.base_path }}
           # Open Graph images need an absolute origin, and it has to be where
           # this build is served rather than the real practice domain.
-          NEXT_PUBLIC_SITE_URL: ${{ steps.pages.outputs.origin }}
+          NEXT_PUBLIC_SITE_URL: ${{ steps.pages.outputs.base_url }}
         run: npm run build
 
       - name: Disable Jekyll processing
